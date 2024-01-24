@@ -5,6 +5,7 @@ document.querySelectorAll(".btnDetail").forEach((item) => {
     let image = parent.querySelector(".card-img-top").src;
     let price = parent.querySelector(".price").innerHTML;
     let title = parent.querySelector(".card-text").innerHTML;
-    console.log(`title: ${title}`);
+    let description = parent.querySelector(".description") ? parent.querySelector(".description").innerHTML : "<i>no information available</i>";
+    console.log(`description: ${description}`);
   });
 });
